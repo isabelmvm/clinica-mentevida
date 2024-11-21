@@ -1,0 +1,135 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #f0f4f8, #d9e8e6); /* Gradiente suave em tons pastéis */
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 80vh;
+}
+
+.topo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo do cabeçalho */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d9e8e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.clinica-imagem {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px; /* Espaço entre a imagem e o texto */
+}
+
+.menu {
+    margin-left: auto; /* Alinha o menu à direita */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    text-align: right; /* Alinha os links para a direita */
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar ul li {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li:active {
+    color: #0044cc; /* Cor para o link ativo */
+    font-weight: bold;
+    border-bottom: 2px solid #0044cc; /* Linha inferior para destaque */
+}
+
+.navbar ul li:hover {
+    background-color: rgb(211, 253, 253);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-size: larger;
+    border-radius: 10%;
+}body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #f0f4f8, #d9e8e6); /* Gradiente suave em tons pastéis */
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo do cabeçalho */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d9e8e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.clinica-imagem {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px; /* Espaço entre a imagem e o texto */
+}
+
+.menu {
+    margin-left: auto; /* Alinha o menu à direita */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    text-align: right; /* Alinha os links para a direita */
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li:active {
+    color: #0044cc; /* Cor para o link ativo */
+    font-weight: bold;
+    border-bottom: 2px solid #0044cc; /* Linha inferior para destaque */
+}
+
+.navbar ul li:hover {
+    background-color: rgb(211, 253, 253);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-size: larger;
+    border-radius: 10%;
+}
+
+.rodape {
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Fixa o rodapé na parte inferior */
+    bottom: 0; /* Garantir que o rodapé fique na parte inferior da tela */
+    left: 0; /* Ocupa toda a largura */
+    width: 100%; /* Largura total da página */
+    border-radius: 10px;
+    
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #f0f4f8, #d9e8e6);
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d9e8e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.clinica-imagem {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.menu {
+    margin-left: auto;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+.menu ul li a:hover {
+    color: #0044cc;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.tabela-relatorios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-relatorios th, .tabela-relatorios td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.tabela-relatorios th {
+    background-color: #e6f2f1;
+    color: #333;
+}
+
+button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003399;
+}
+
+.novo-relatorio {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #0044cc;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.novo-relatorio:hover {
+    background-color: #003399;
+}
+
+.rodape {
+    background-color: rgba(179, 206, 224, 0.8);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #f0f4f8, #d9e8e6);
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d9e8e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.clinica-imagem {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.menu {
+    margin-left: auto;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+.menu ul li a:hover {
+    color: #0044cc;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+.btn-editar {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-editar:hover {
+    background-color: #003399;
+}
+.btn-excluir {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #f7031b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-excluir:hover {
+    background-color: #da0701;
+}
+
+.novo-relatorio {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #0044cc;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.novo-relatorio:hover {
+    background-color: #003399;
+}
+.rodape {
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Fixa o rodapé na parte inferior */
+    bottom: 0; /* Garantir que o rodapé fique na parte inferior da tela */
+    left: 0; /* Ocupa toda a largura */
+    width: 100%; /* Largura total da página */
+    border-radius: 10px;
+    
+}
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Clinica">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/ClinicaMenteVida/build/web/WEB-INF/lib/src/build/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/ClinicaMenteVida/build/web/WEB-INF/lib/src/demo/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/ClinicaMenteVida/build/web/WEB-INF/lib/src/generated/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/ClinicaMenteVida/build/web/WEB-INF/lib/src/legacy/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/ClinicaMenteVida/build/web/WEB-INF/lib/src/main/core-api/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/ClinicaMenteVida/build/web/WEB-INF/lib/src/main/core-impl/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/ClinicaMenteVida/build/web/WEB-INF/lib/src/main/protocol-impl/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/ClinicaMenteVida/build/web/WEB-INF/lib/src/main/user-api/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/ClinicaMenteVida/build/web/WEB-INF/lib/src/main/user-impl/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/ClinicaMenteVida/build/web/WEB-INF/lib/src/test/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/ClinicaMenteVida/src/java"/>
+        <property name="context-root" value="Clinica"/>
+        <property name="java-output-path" value="/Clinica/ClinicaMenteVida/build/web/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>

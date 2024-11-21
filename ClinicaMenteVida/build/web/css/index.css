@@ -1,0 +1,81 @@
+/* Estilos gerais */
+body {
+    background: linear-gradient(135deg, #A7C5E0, #D9E7E3, #F2F2F2); /* Gradiente de fundo em tons pastÃ©is */
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Estilo do header */
+.topo {
+    text-align: center; /* Alinha o texto Ã  esquerda */
+    padding: 20px; /* EspaÃ§amento em volta do header */
+}
+
+/* Estilo do container principal */
+.container {
+    display: flex; /* Usa flexbox para organizar o layout */
+    flex-direction: column; /* Alinha os itens em coluna */
+    padding: 20px; /* EspaÃ§amento interno */
+    align-items: center;
+}
+
+/* Estilo para a seÃ§Ã£o de boas-vindas */
+.boas-vindas {
+    flex: 1; /* Permite que essa seÃ§Ã£o ocupe espaÃ§o proporcional */
+    margin-right: 20px; /* EspaÃ§amento Ã  direita */
+}
+
+/* Estilo do formulÃ¡rio de login */
+.login-container {
+   
+    width: 50%;
+    right: 50%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    padding: 40px; /* EspaÃ§amento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra do box */
+    transition: transform 0.3s; /* TransiÃ§Ã£o suave */
+}
+
+/* Efeito de hover para a caixa de login */
+.login-container:hover {
+    transform: scale(1.02); /* Aumenta ligeiramente ao passar o mouse */
+}
+
+/* Estilo dos elementos do formulÃ¡rio */
+label {
+    display: block; /* Cada label ocupa uma linha */
+    margin-bottom: 8px; /* EspaÃ§amento abaixo das labels */
+    font-weight: bold; /* Deixa o texto mais forte */
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%; /* Largura total */
+    padding: 10px; /* EspaÃ§amento interno */
+    margin-bottom: 15px; /* EspaÃ§amento abaixo dos campos */
+    border: 1px solid #A7C5E0; /* Borda em tom pastel */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo do botÃ£o de submit */
+input[type="submit"] {
+    background-color: #0044cc;
+    color: white;
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* EspaÃ§amento interno */
+    font-size: 16px; /* Tamanho d*/
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #003399; /* Cor ao passar o mouse */
+}
+
+
+.rodape{
+    text-align: center;
+}

@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #f0f4f8, #d9e8e6); /* Gradiente suave em tons pastéis */
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo do cabeçalho */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d9e8e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.clinica-imagem {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px; /* Espaço entre a imagem e o texto */
+}
+
+.menu {
+    margin-left: auto; /* Alinha o menu à direita */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: right; /* Alinha os links para a direita */
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    color: #0044cc; /* Altera a cor ao passar o mouse */
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Estilo do formulário */
+form {
+    max-width: 600px; /* Limita a largura do formulário */
+    margin: 30px auto; /* Centraliza o formulário na página */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px); /* Garante que o campo ocupe toda a largura menos o padding */
+    padding: 10px;
+    padding-left: 15px; /* Espaço adicional à esquerda */
+    padding-right: 15px; /* Espaço adicional à direita */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que padding não afete a largura total */
+}
+
+input[type="submit"] {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #003399;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.botoes {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px; /* Espaço entre os botões */
+    padding: 10px 15px;
+    background-color: #0044cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botoes:last-child {
+    margin-right: 0; /* Remove margem do último botão */
+}
+
+.botoes:hover {
+    background-color: #003399; /* Cor ao passar o mouse */
+}
+
+
+
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Fixa o rodapé na parte inferior */
+    bottom: 0; /* Garantir que o rodapé fique na parte inferior da tela */
+    left: 0; /* Ocupa toda a largura */
+    width: 100%; /* Largura total da página */
+    border-radius: 10px;
+    
+}
+

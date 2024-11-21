@@ -1,0 +1,124 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #f0f4f8, #d9e8e6); /* Gradiente suave em tons pastéis */
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo do cabeçalho */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d9e8e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.clinica-imagem {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px; /* Espaço entre a imagem e o texto */
+}
+
+.menu {
+    margin-left: auto; /* Alinha o menu à direita */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: right; /* Alinha os links para a direita */
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    color: #0044cc; /* Altera a cor ao passar o mouse */
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003399; /* Cor ao passar o mouse */
+}
+
+.novo-Paciente {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.novo-Paciente:hover {
+    background-color: #003399; /* Cor ao passar o mouse */
+}
+
+
+.voltar-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #d9e8e6;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.voltar-home:hover {
+    background-color: #c9e1e0; /* Cor ao passar o mouse */
+}
+
+.rodape {
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Fixa o rodapé na parte inferior */
+    bottom: 0; /* Garantir que o rodapé fique na parte inferior da tela */
+    left: 0; /* Ocupa toda a largura */
+    width: 100%; /* Largura total da página */
+    border-radius: 10px;
+    
+}
+

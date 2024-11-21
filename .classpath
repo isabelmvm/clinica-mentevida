@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="ClinicaMenteVida/build/web/WEB-INF/lib/src/build/java"/>
+	<classpathentry kind="src" path="ClinicaMenteVida/build/web/WEB-INF/lib/src/demo/java"/>
+	<classpathentry kind="src" path="ClinicaMenteVida/build/web/WEB-INF/lib/src/generated/java"/>
+	<classpathentry kind="src" path="ClinicaMenteVida/build/web/WEB-INF/lib/src/legacy/java"/>
+	<classpathentry kind="src" path="ClinicaMenteVida/build/web/WEB-INF/lib/src/main/core-api/java"/>
+	<classpathentry kind="src" path="ClinicaMenteVida/build/web/WEB-INF/lib/src/main/core-impl/java"/>
+	<classpathentry kind="src" path="ClinicaMenteVida/build/web/WEB-INF/lib/src/main/protocol-impl/java"/>
+	<classpathentry kind="src" path="ClinicaMenteVida/build/web/WEB-INF/lib/src/main/user-api/java"/>
+	<classpathentry kind="src" path="ClinicaMenteVida/build/web/WEB-INF/lib/src/main/user-impl/java"/>
+	<classpathentry kind="src" path="ClinicaMenteVida/build/web/WEB-INF/lib/src/test/java"/>
+	<classpathentry kind="src" path="ClinicaMenteVida/src/java"/>
+	<classpathentry kind="lib" path="ClinicaMenteVida/build/web/WEB-INF/lib/mysql-connector-j-9.0.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="output" path="ClinicaMenteVida/build/web/WEB-INF/classes"/>
+</classpath>
