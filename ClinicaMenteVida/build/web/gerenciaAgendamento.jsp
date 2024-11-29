@@ -19,6 +19,26 @@
         <link rel="stylesheet" href="css/novoAgendamento.css"> <!-- Link para o CSS -->
     </head>
     <body>
+         <header class="topo">
+        <img src="img/psc.png" alt="Logo da Clínica" class="clinica-imagem">
+        <div>
+            <h1>Clínica Mente & Vida</h1>
+            <p>Saúde Mental e Bem-Estar</p>
+        </div>
+        <nav class="menu">
+            <ul class="nav-list">
+                <li onclick="location = 'home.jsp'">Início</li>
+                <li onclick="location = 'paciente.jsp'">Pacientes</li>
+                <li onclick="location = 'medico.jsp'">Médicos</li>
+                <li onclick="location = 'funcionario.jsp'">Funcionários</li>
+                <li onclick="location = 'agendamento.jsp'">Agendamentos</li>
+                <li onclick="location = 'consulta.jsp'">Consultas</li>
+                <li onclick="location = 'prescricao.jsp'">Prescrições</li>
+                <li onclick="location = 'relatorio.jsp'">Relatórios</li>
+                <li onclick="location = 'perfil.jsp'">Perfil</li>
+            </ul>
+        </nav>
+    </header>
         <%
             int idAgendamento = 0;
             LocalDateTime dataAgendamento = null;

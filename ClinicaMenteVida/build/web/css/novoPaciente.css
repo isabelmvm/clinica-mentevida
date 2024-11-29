@@ -16,39 +16,41 @@ body {
     color: #333;
 }
 
+header.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #d9e8e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .clinica-imagem {
     width: 80px;
     height: 80px;
     border-radius: 10px;
-    margin-right: 15px; /* Espaço entre a imagem e o texto */
 }
 
 .menu {
-    margin-left: auto; /* Alinha o menu à direita */
+    margin-left: auto;
 }
 
-.menu ul {
+.nav-list {
     list-style: none;
+    display: flex;
+    gap: 15px;
     padding: 0;
-    text-align: right; /* Alinha os links para a direita */
+    margin: 0;
 }
 
-.menu ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-.menu ul li a {
-    text-decoration: none;
+.nav-list li {
+    cursor: pointer;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
-.menu ul li a:hover {
-    color: #0044cc; /* Altera a cor ao passar o mouse */
-}
-
-main {
-    padding: 20px;
+.nav-list li:hover {
+    color: #0044cc;
 }
 
 h2 {

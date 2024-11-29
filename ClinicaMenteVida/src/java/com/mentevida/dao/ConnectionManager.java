@@ -51,7 +51,7 @@ public class ConnectionManager {
         
         if (sisO.startsWith("win")) {
             // Windows
-            fIS = new FileInputStream("C:\\Users\\sebastiaomm\\Downloads\\Clinica\\ClinicaMenteVida\\prop.properties");
+            fIS = new FileInputStream("C:\\DevJavaEE\\clinica-mentevida\\ClinicaMenteVida\\prop.properties");
         } else if (sisO.contains("linux")) {
             // Linux
             fIS = new FileInputStream("/home/kuroneko/Dev/Java/netbeans/ClinicaMenteVida/prop.properties");

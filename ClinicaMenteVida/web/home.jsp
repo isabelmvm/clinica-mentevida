@@ -1,67 +1,115 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A ClÃ­nica Mente & Vida oferece serviÃ§os especializados para o diagnÃ³stico e tratamento de transtornos mentais.">
-        <link rel="stylesheet" href="css/home.css">
-        <title>Home - ClÃ­nica Mente & Vida</title>
-    </head>
-    <body>
-        <%
-            int idUser = -1;
-            int cargo = -1;
-            boolean admin = false;
-            if (session.getAttribute("user") == null || session.getAttribute("cargo") == null || session.getAttribute("admin") == null) {
-                response.sendRedirect("index.jsp");
-            } else {
-                idUser = (int) session.getAttribute("user");
-                cargo = (int) session.getAttribute("cargo");
-                admin = (boolean) session.getAttribute("admin");
-            }
-        %>
-        <header class="topo">
-            <img src="img/psc.png" alt="Logo da ClÃ­nica" class="clinica-imagem">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página inicial da Clínica Mente & Vida, com instruções sobre como utilizar o sistema.">
+    <title>Home - Clínica Mente & Vida</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header class="topo">
+        <img src="img/psc.png" alt="Logo da Clínica" class="clinica-imagem">
+        <div>
+            <h1>Clínica Mente & Vida</h1>
+            <p>Saúde Mental e Bem-Estar</p>
+        </div>
+        <nav class="menu">
+            <ul class="nav-list">
+                <li onclick="location = 'home.jsp'">Início</li>
+                <li onclick="location = 'paciente.jsp'">Pacientes</li>
+                <li onclick="location = 'medico.jsp'">Médicos</li>
+                <li onclick="location = 'funcionario.jsp'">Funcionários</li>
+                <li onclick="location = 'agendamento.jsp'">Agendamentos</li>
+                <li onclick="location = 'consulta.jsp'">Consultas</li>
+                <li onclick="location = 'prescricao.jsp'">Prescrições</li>
+                <li onclick="location = 'relatorio.jsp'">Relatórios</li>
+                <li onclick="location = 'perfil.jsp'">Perfil</li>
+            </ul>
+        </nav>
+    </header>
+   <section class="instructions">
+    <h2>Como Utilizar o Sistema</h2>
+    <details>
+        <summary>Pacientes</summary>
+        <ul>
+            <li><strong>Visualizar</strong>: Clique em "Pacientes".</li>
+            <li><strong>Cadastrar</strong>: Clique em "Pacientes" > "Cadastrar Paciente". Preencha o formulário e clique em "Efetuar Cadastro".</li>
+            <li><strong>Excluir</strong>: Clique em "Pacientes", selecione um paciente e clique em "Excluir". Confirme a ação.</li>
+            <li><strong>Alterar</strong>: Clique em "Pacientes", selecione um paciente e clique em "Alterar". Altere os dados e clique em "Efetuar Alteração".</li>
+        </ul>
+    </details>
+     <details class="details-container">
+                <summary>Médicos</summary>
+                <ul>
+                    <li><strong>Visualizar</strong>: Clique em "Médicos".</li>
+                    <li><strong>Cadastrar</strong>: Clique em "Médicos" > "Cadastrar Médico". Preencha o formulário e clique em "Efetuar Cadastro".</li>
+                    <li><strong>Excluir</strong>: Clique em "Médicos", selecione um médico e clique em "Excluir". Confirme a ação.</li>
+                    <li><strong>Alterar</strong>: Clique em "Médicos", selecione um médico e clique em "Alterar". Altere os dados e clique em "Efetuar Alteração".</li>
+                </ul>
+            </details>
 
-            <div> <h1>ClÃ­nica Mente & Vida</h1>
-                <p>SaÃºde Mental e Bem-Estar</p> 
-            </div>
+            <details class="details-container">
+                <summary>Funcionários</summary>
+                <ul>
+                    <li><strong>Visualizar</strong>: Clique em "Funcionários".</li>
+                    <li><strong>Cadastrar</strong>: Clique em "Funcionários" > "Cadastrar Funcionário". Preencha o formulário e clique em "Efetuar Cadastro".</li>
+                    <li><strong>Excluir</strong>: Clique em "Funcionários", selecione um funcionário e clique em "Excluir". Confirme a ação.</li>
+                    <li><strong>Alterar</strong>: Clique em "Funcionários", selecione um funcionário e clique em "Alterar". Altere os dados e clique em "Efetuar Alteração".</li>
+                </ul>
+            </details>
 
+            <details class="details-container">
+                <summary>Agendamentos</summary>
+                <ul>
+                    <li><strong>Visualizar</strong>: Clique em "Agendamentos".</li>
+                    <li><strong>Cadastrar</strong>: Clique em "Agendamentos" > "Novo Agendamento". Preencha o formulário e clique em "Efetuar Registro".</li>
+                    <li><strong>Alterar</strong>: Clique em "Agendamentos", selecione um agendamento e clique em "Alterar". Altere os dados e clique em "Efetuar Alteração".</li>
+                    <li><strong>Cancelar</strong>: Clique em "Agendamentos", selecione um agendamento e clique em "Cancelar". Confirme a ação.</li>
+                </ul>
+            </details>
+    <details>
+        <summary>Agendamentos</summary>
+        <ul>
+            <li><strong>Visualizar</strong>: Clique em "Agendamentos".</li>
+            <li><strong>Cadastrar</strong>: Clique em "Agendamentos" > "Novo Agendamento". Preencha o formulário e clique em "Efetuar Registro".</li>
+            <li><strong>Alterar</strong>: Clique em "Agendamentos", selecione um agendamento e clique em "Alterar". Altere os dados e clique em "Efetuar Alteração".</li>
+            <li><strong>Cancelar</strong>: Clique em "Agendamentos", selecione um agendamento e clique em "Cancelar". Confirme a ação.</li>
+        </ul>
+    </details>
+    <!-- Continue para outras categorias -->
+</section>
+     <details class="details-container">
+                <summary>Prescrições</summary>
+                <ul>
+                    <li><strong>Visualizar</strong>: Clique em "Prescrições".</li>
+                    <li><strong>Cadastrar</strong>: Clique em "Prescrições" > "Novo Registro". Preencha o formulário e clique em "Efetuar Registro".</li>
+                    <li><strong>Alterar</strong>: Clique em "Prescrições", selecione uma prescrição e clique em "Alterar". Altere os dados e clique em "Efetuar Alteração".</li>
+                    <li><strong>Excluir</strong>: Clique em "Prescrições", selecione uma prescrição e clique em "Excluir". Confirme a ação.</li>
+                </ul>
+            </details>
 
-            <div class="menu">       
-                <nav class="navbar">
-                    <ul>
-                        <li onclick="location = 'home.jsp'">InÃ­cio</li>
-                        <li onclick="redireciona('paciente.jsp')">Pacientes</li>
-                        <li onclick="redireciona('medico.jsp')">MÃ©dicos</li>
-                        <li onclick="redireciona('funcionario.jsp')">FuncionÃ¡rios</li>
-                        <li onclick="redireciona('agendamento.jsp')">Agendamentos</li>
-                        <li onclick="redireciona('consulta.jsp')">Consultas</li>
-                        <li onclick="redireciona('prescricao.jsp')">PrescriÃ§Ãµes</li>
-                        <li onclick="redireciona('relatorio.jsp')">RelatÃ³rios</li>
-                            <% if (admin) {
-                            out.print("<li onclick=\"redireciona('usuario.jsp')\">Usuarios<li>");
-                        }%>
-                        <li onclick="redireciona('perfil.jsp')">Perfil</li>
-                    </ul>
-                </nav>
-            </div>      
-        </header>
+            <details class="details-container">
+                <summary>Relatórios</summary>
+                <ul>
+                    <li><strong>Visualizar</strong>: Clique em "Relatórios".</li>
+                    <li><strong>Cadastrar</strong>: Clique em "Relatórios" > "Novo Relatório". Preencha o formulário e clique em "Efetuar Registro".</li>
+                    <li><strong>Alterar</strong>: Clique em "Relatórios", selecione um relatório e clique em "Alterar". Altere os dados e clique em "Efetuar Alteração".</li>
+                    <li><strong>Excluir</strong>: Clique em "Relatórios", selecione um relatório e clique em "Excluir". Confirme a ação.</li>
+                </ul>
+            </details>
+    <details class="details-container">
+                <summary>Alterar Dados do Perfil</summary>
+                <ul>
+                    <li><strong>Alterar Perfil</strong>: Clique em "Perfil" no menu. Altere os dados e clique em "Alterar Dados".</li>
+                </ul>
+            </details>
 
-        <section>
-            <iframe id="frame" src=""></iframe>
-        </section>
+       
+         
 
-        <footer class="rodape">
-            <p>&copy; 2024 ClÃ­nica Mente & Vida - Todos os direitos reservados</p>
-        </footer>
-        <script>
-            const iframe = document.getElementById("frame");
-            function redireciona(pagina) {
-                iframe.src = pagina;
-            }
-        </script>
-    </body>
+    <footer class="rodape">
+        <p>&copy; 2024 Clínica Mente & Vida - Todos os direitos reservados</p>
+    </footer>
+</body>
 </html>

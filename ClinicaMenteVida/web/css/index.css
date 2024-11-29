@@ -1,42 +1,50 @@
 /* Estilos gerais */
 body {
-    background: linear-gradient(135deg, #A7C5E0, #D9E7E3, #F2F2F2); /* Gradiente de fundo em tons pastÃ©is */
+    background: linear-gradient(135deg, #A7C5E0, #D9E7E3, #F2F2F2); /* Gradiente de fundo em tons pastéis */
     min-height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Estilo do header */
 .topo {
-    text-align: center; /* Alinha o texto Ã  esquerda */
-    padding: 20px; /* EspaÃ§amento em volta do header */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 20px; /* Espaçamento em volta do header */
+}
+
+.topo .logo {
+    width: 100px;
+    height: auto;
 }
 
 /* Estilo do container principal */
 .container {
     display: flex; /* Usa flexbox para organizar o layout */
     flex-direction: column; /* Alinha os itens em coluna */
-    padding: 20px; /* EspaÃ§amento interno */
+    padding: 20px; /* Espaçamento interno */
     align-items: center;
 }
 
-/* Estilo para a seÃ§Ã£o de boas-vindas */
+/* Estilo para a seção de boas-vindas */
 .boas-vindas {
-    flex: 1; /* Permite que essa seÃ§Ã£o ocupe espaÃ§o proporcional */
-    margin-right: 20px; /* EspaÃ§amento Ã  direita */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaço abaixo da seção */
 }
 
-/* Estilo do formulÃ¡rio de login */
+/* Estilo do formulário de login */
 .login-container {
-   
-    width: 50%;
-    right: 50%;
+    width: 100%;
+    max-width: 400px; /* Largura máxima para o formulário */
     background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
-    padding: 40px; /* EspaÃ§amento interno */
+    padding: 40px; /* Espaçamento interno */
     border-radius: 15px; /* Bordas arredondadas */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra do box */
-    transition: transform 0.3s; /* TransiÃ§Ã£o suave */
+    transition: transform 0.3s; /* Transição suave */
 }
 
 /* Efeito de hover para a caixa de login */
@@ -44,38 +52,59 @@ body {
     transform: scale(1.02); /* Aumenta ligeiramente ao passar o mouse */
 }
 
-/* Estilo dos elementos do formulÃ¡rio */
+/* Estilo dos elementos do formulário */
+.input-group {
+    margin-bottom: 15px; /* Espaçamento abaixo do grupo */
+}
+
 label {
     display: block; /* Cada label ocupa uma linha */
-    margin-bottom: 8px; /* EspaÃ§amento abaixo das labels */
+    margin-bottom: 8px; /* Espaçamento abaixo das labels */
     font-weight: bold; /* Deixa o texto mais forte */
 }
 
 input[type="text"], input[type="password"], select {
     width: 100%; /* Largura total */
-    padding: 10px; /* EspaÃ§amento interno */
-    margin-bottom: 15px; /* EspaÃ§amento abaixo dos campos */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento abaixo dos campos */
     border: 1px solid #A7C5E0; /* Borda em tom pastel */
     border-radius: 5px; /* Bordas arredondadas */
     font-size: 16px; /* Tamanho da fonte */
 }
 
-/* Estilo do botÃ£o de submit */
-input[type="submit"] {
+input[type="radio"] {
+    margin-right: 5px; /* Espaçamento ao lado do rádio */
+}
+
+/* Estilo do botão de submit */
+.submit-btn {
     background-color: #0044cc;
     color: white;
     border: none; /* Sem borda */
     border-radius: 5px; /* Bordas arredondadas */
-    padding: 10px; /* EspaÃ§amento interno */
-    font-size: 16px; /* Tamanho d*/
+    padding: 10px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
     cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s; /* Transição de cor suave */
 }
 
-input[type="submit"]:hover {
+.submit-btn:hover {
     background-color: #003399; /* Cor ao passar o mouse */
 }
 
+/* Estilo da mensagem de erro */
+.error-message {
+    color: red; /* Cor da mensagem de erro */
+    font-size: 14px; /* Tamanho da fonte */
+    margin-top: 10px; /* Espaçamento superior */
+}
 
-.rodape{
+/* Estilo do rodapé */
+.rodape {
     text-align: center;
+    margin-top: auto; /* Empurra o rodapé para o final da página */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    width: 100%;
 }

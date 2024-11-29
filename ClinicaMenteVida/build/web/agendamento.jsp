@@ -19,8 +19,28 @@
         <meta name="description" content="A Clínica Mente & Vida oferece serviÃ§os especializados para o diagnóstico e tratamento de transtornos mentais."> 
 
         <link rel="stylesheet" href="css/agendamento.css"> <!-- Link para o CSS -->
-    </head>
+            
     <body>
+         <header class="topo">
+        <img src="img/psc.png" alt="Logo da Clínica" class="clinica-imagem">
+        <div>
+            <h1>Clínica Mente & Vida</h1>
+            <p>Saúde Mental e Bem-Estar</p>
+        </div>
+        <nav class="menu">
+            <ul class="nav-list">
+                <li onclick="location = 'home.jsp'">Início</li>
+                <li onclick="location = 'paciente.jsp'">Pacientes</li>
+                <li onclick="location = 'medico.jsp'">Médicos</li>
+                <li onclick="location = 'funcionario.jsp'">Funcionários</li>
+                <li onclick="location = 'agendamento.jsp'">Agendamentos</li>
+                <li onclick="location = 'consulta.jsp'">Consultas</li>
+                <li onclick="location = 'prescricao.jsp'">Prescrições</li>
+                <li onclick="location = 'relatorio.jsp'">Relatórios</li>
+                <li onclick="location = 'perfil.jsp'">Perfil</li>
+            </ul>
+        </nav>
+    </header>
 
         <%
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm");
@@ -99,7 +119,7 @@
 
                         <td>
                             <form class="botoesAcao" action="gerenciaAgendamento.jsp" method="POST">
-                                <button>
+                                <button class="btn-editar">
                                     Editar
                                 </button>
                                 <input type="hidden" name="idAgendamento" value="<%=idAgendamento%>">
@@ -108,7 +128,7 @@
                             <form class="botoesAcao" action="ControleAgendamento" method="POST" onsubmit="return confirm('Você tem certeza de que quer excluir o agendamento <%=idAgendamento%>?');">
                                 <input type="hidden" name="idAgendamento" value="<%=idAgendamento%>">
                                 <input type="hidden" name="excluir" value="true">
-                                <button>
+                                <button class="btn-excluir">
                                     Excluir
                                 </button>
                             </form>
